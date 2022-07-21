@@ -1,0 +1,263 @@
+
+/*Reinicio de valores por defecto*/
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+	
+    font-size: 100%;
+    list-style-type: none;
+	font-family: 'Tiro Gurmukhi', serif;
+}
+
+a {
+color: black;
+font-size: 1.2em;
+}
+
+/*Aca Son los estilos del header*/
+
+.container {
+	width: 960px;
+	max-width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+
+.main-header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	box-shadow: -50px -21px 40px #383838
+          
+}
+
+.main-nav ul {
+	margin: 1em 0 .5em;
+	text-align: center;
+}
+.main-nav li {
+	display: inline;
+}
+.main-nav a {
+	display: inline-block;
+	padding: .5em 1.5em;
+	font-family: 'Tiro Gurmukhi', serif;
+}
+
+/* Aca comienza la segunda seccion y modulo*/
+
+.container2 {
+    border-radius: 30px;
+    width: min(80%, 1000px);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	grid-template-rows: min-content 1fr min-content;
+    grid-gap: 0 7rem;
+    gap: 0 7rem;
+    position: relative;
+margin-top: 7%;
+}
+
+.Columna1 ,.Columna2{
+	justify-content: flex-start;
+	display:grid;
+	margin-top: 2rem;
+}
+.Columna2{
+	flex-direction: row;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	margin-top: 15vw;
+
+	
+}
+
+.text1{
+    position: relative;
+    top: 50%;  
+    width: 20em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+	justify-content: center;
+}
+
+.text{
+		animation: typewriter 4s steps(44) 1s 1 normal both,
+				   blinkTextCursor 500ms steps(44) infinite normal;
+	  }
+	  @keyframes typewriter{
+		from{width: 0;}
+		to{width: 20em;}
+	  }
+	  @keyframes blinkTextCursor{
+		from{border-right-color: rgba(255,255,255,.75);}
+		to{border-right-color: transparent;}
+	  }
+
+	  .text2{
+		font-size: 1em;
+margin-top: 2vw;	
+font-family: 'Courier New', Courier, monospace; 
+font-weight: 200;
+font-style: normal; 
+}
+
+/*Imagen 1*/
+.img{
+	width: 300px;
+	height: 300px;
+	margin-top: 2vw;
+	
+	
+}
+/*Section 2*/
+
+.card-container {
+	background-color: #6b6b6b;
+  color: #ffffff;
+  height: 210px;
+}
+
+.card-botones {
+  display: flex;
+  width: 86%;
+  margin-inline: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  transform: translateY(-10%);
+}
+
+.titulo {
+  width: 95%;
+  font-family: "Mulish";
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 2rem 2rem 10px;
+  text-align: center;
+  margin: 0;
+  background-color: #6b6b6b;
+  color: #ffffff;
+}
+
+.links {
+  width: 95%;
+ text-align: center;
+}
+.btn1{
+	background-color: red;
+	padding: 10px 10px ;
+	border-radius: 15px;
+	color: #ffffff;
+}
+.btn1:hover{
+	background-color: rgb(0, 0, 0);
+}
+.btn2{
+	background-color: rgb(248, 248, 248);
+	padding: 10px 10px ;
+	border-radius: 15px;
+  color: #000;
+}
+.btn2:hover{
+	background-color: red;
+	color: #ffffff;
+}
+
+@media screen and (min-width: 992px) {
+  .card-container {
+    width: min(80%, 1200px);
+    border-radius: 30px;
+    margin-inline: auto;
+    transform: translateY(-50%);
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .card-botones {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1.5rem;
+  }
+
+  .titulo {
+    flex-grow: 1;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    max-width: 190px;
+  }
+
+  .links {
+    width: max(30%, 350px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-container {
+    width: min(80%, 1200px);
+    border-radius: 30px;
+    margin-inline: auto;
+    transform: translateY(-50%);
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vw;
+  }
+  
+
+  .card-botones {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 0px;
+    gap: 1.5rem;
+    transform: translateY(0%);
+
+  }
+
+  .titulo {
+    flex-grow: 1;
+    font-size: 1.35rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    max-width: 312px;
+  }
+
+  .links {
+    width: max(30%, 350px);
+    top: 1px;
+  }
+}
+@media (min-width: 960px) {
+	.main-header .container {
+		justify-content: space-between;
+	}
+}
