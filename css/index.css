@@ -19,6 +19,10 @@ a {
 color: black;
 font-size: 1.2em;
 }
+.text-muted {
+  --bs-text-opacity: 1;
+  color: #ffffff!important;
+}
 
 .nav-link {
   display: block;
@@ -38,12 +42,44 @@ font-size: 1.2em;
 	
 }
 .title{
-  font-size: 2em;
+  font-size: 4em;
   margin-top: 2vw;
   margin-bottom: 2vw;
 
 }
+.textEscritura{
+  font-size:2.5rem;
+}
+.TextMovil{
+  font-weight: bold;
+     color: #2d2d2d;
+     font-style: normal;
+     font-size: 2.5rem;
+}
 
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1pxsolidrgba(0,0,0,.125);
+  border-radius: 0.25rem;
+  align-items: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.profile{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
 .marquee {
   width: 100%;
   background: rgba(222, 115, 79, 0.495);
